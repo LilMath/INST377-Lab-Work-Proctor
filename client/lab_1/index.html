@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 
-include your HTML opening tags
+<!-- include your HTML opening tags -->
 <html>
-and your hidden "head" tag
+<!-- and your hidden "head" tag -->
 <head>
+  <meta charset="UTF-8"/>
   <title> INST377 Lab1</title>
 </head>
-and your "title" tag
+<!-- and your "title" tag -->
 
+<!-- CSS -->
+<style>
+#wrapper {
+  position: relative;
+  border: 3px solid black;
+}
+#div.c {
+  width: 100%;
+}
+#div.l {
+  position: absolute;
+  left:auto;
+}
+#div.r {
+  position: absolute;
+  right:auto;
+}
+#div.i {
+  position: absolute;
+  right:auto;
+}
+#div.d {
+  position: absolute;
+  right:auto;
+}
+footer {
+  width: 100%;
+}
+</style>
 
-full-width wrapper div
-  header containing: YOUR NAME's Labs For INST377
-  container div
-      left div
-        sub-header saying "albums"
-        Your top 5 albums in an ordered list
-      right div (main div for the site)
-        sub-header saying "image carousel"
-          div to contain four images
-            four images of mochi from your readings, all square (they're four different image types!)
-          div to contain a description or text
-            description of images
+<!-- full-width wrapper div -->
+<div id="wrapper">
+  <!-- header containing: YOUR NAME's Labs For INST377 -->
+  <header>
+    <h1>Proctor Labs For INST377</h1>
+  </header>
+  <!-- container div -->
+  <div id="c">
+      <!-- left div -->
+      <div id="l">
+        <!-- sub-header saying "albums" -->
+        <header>
+          <h2> albums </h2> 
+        </header>
+       <!-- Your top 5 albums in an ordered list -->
+       <ol>
+        <li>Outkast - Speakerbox/Love Below</li>
+        <li>Jay-Z - Resonable Doubt</li>
+        <li>Kanye West - 808s and Heartbreak</li>
+        <li>2pac - All Eyez on Me</li>
+        <li>Dr. Dre - The Chronic</li>
+      </ol>
+      </div>  
+        
+      <!-- right div (main div for the site) -->
+      <div id="r">
+        <!-- sub-header saying "image carousel" -->
+        <header>
+          <h2> image carousel</h2>
+        </header>
+      </div>
+          <!-- div to contain four images -->
+          <div id="i">
+            <!-- four images of mochi from your readings, all square (they're four different image types!) -->
+            <img src='images/mochi/mochi.gif'/>
+            <img src='images/mochi/mochi.jpg'/>
+            <img src='images/mochi/mochi.png'/>
+            <img src='images/mochi/mochi.svg'/>
 
-
-full-width page footer containing your github account name and a link to your gitHub account
+           </div> 
+          <!-- div to contain a description or text -->
+          <div id="d">
+            <p> description of images </p>
+          </div>
+    </div>
+</div>
+<!-- full-width page footer containing your github account name and a link to your gitHub account -->
+<footer>gitHub: LilMath </footer> <a href="https://github.com/LilMath">Link</a>
 </html>
